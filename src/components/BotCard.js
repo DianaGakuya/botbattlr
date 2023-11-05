@@ -19,7 +19,11 @@ function BotCard({ bot, addBotToArmy}) {
         <div className="content">
           <div className="header">
             {bot.name}
-            <i className={botTypeClasses[bot.bot_class]} />
+           
+            <br></br>
+                {bot.bot_class}
+                <i className={botTypeClasses[bot.bot_class]} />
+                
           </div>
           <div className="meta text-wrap">
             <small>{bot.catchphrase}</small>
